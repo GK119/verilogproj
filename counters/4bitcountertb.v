@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 31.03.2025 00:16:57
+// Create Date: 
 // Design Name: 
 // Module Name: 4bitcountertb
 // Project Name: 
