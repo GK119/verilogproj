@@ -24,7 +24,7 @@ module rca (
     output [3:0] sum,
     output cout
 );
-    wire c0, c1, c2;  // Intermediate carry signals
+    wire c0, c1, c2; 
 
     fa FA0 (.a(a[0]), .b(b[0]), .cin(cin), .sum(sum[0]), .cout(c0));
     fa FA1 (.a(a[1]), .b(b[1]), .cin(c0), .sum(sum[1]), .cout(c1));
