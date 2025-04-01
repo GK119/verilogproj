@@ -21,11 +21,11 @@
 
 
 module full_adder_tb;
-    // Declare signals
-    reg a, b, cin;      // Inputs (reg for driving)
-    wire sum, cout;     // Outputs (wire for receiving)
+    
+    reg a, b, cin;      
+    wire sum, cout;    
 
-    // Instantiate the DUT (Device Under Test)
+
     full_adder uut (
         .a(a),
         .b(b),
@@ -34,23 +34,23 @@ module full_adder_tb;
         .cout(cout)
     );
 
-    // Stimulus generation
+   
     initial begin
-        // Test all input combinations
-        a = 0; b = 0; cin = 0; #10;  // 0 + 0 + 0
-        a = 0; b = 0; cin = 1; #10;  // 0 + 0 + 1
-        a = 0; b = 1; cin = 0; #10;  // 0 + 1 + 0
-        a = 0; b = 1; cin = 1; #10;  // 0 + 1 + 1
-        a = 1; b = 0; cin = 0; #10;  // 1 + 0 + 0
-        a = 1; b = 0; cin = 1; #10;  // 1 + 0 + 1
-        a = 1; b = 1; cin = 0; #10;  // 1 + 1 + 0
-        a = 1; b = 1; cin = 1; #10;  // 1 + 1 + 1
+      
+        a = 0; b = 0; cin = 0; #10;  
+        a = 0; b = 0; cin = 1; #10;   
+        a = 0; b = 1; cin = 0; #10;  
+        a = 0; b = 1; cin = 1; #10;  
+        a = 1; b = 0; cin = 0; #10;  
+        a = 1; b = 0; cin = 1; #10;
+        a = 1; b = 1; cin = 0; #10;  
+        a = 1; b = 1; cin = 1; #10;  
 
-        // End simulation
+       
         $finish;
     end
 
-    // Monitor outputs
+    
     initial begin
         $monitor("At time %t: a = %b, b = %b, cin = %b, sum = %b, cout = %b",
                  $time, a, b, cin, sum, cout);
