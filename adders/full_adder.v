@@ -22,30 +22,30 @@
 
 
 module full_adder (
-    input  a,      // First input bit
-    input  b,      // Second input bit
-    input  cin,    // Carry input bit
-    output sum,    // Sum output
-    output cout    // Carry output
+    input  a,      
+    input  b,      
+    input  cin,    
+    output sum,    
+    output cout    
 );
-    wire s1, c1, c2;  // Internal signals
+    wire s1, c1, c2; 
 
-    // First half adder
+    
     half_adder ha1 (
         .a(a),
         .b(b),
-        .sum(s1),    // Sum of a and b
-        .carry(c1)   // Carry of a and b
+        .sum(s1),   
+        .carry(c1)  
     );
 
-    // Second half adder
+    
     half_adder ha2 (
         .a(s1),
         .b(cin),
-        .sum(sum),   // Final sum output
-        .carry(c2)  // Carry of s1 and cin
+        .sum(sum),   
+        .carry(c2)  
     );
 
-    // OR gate for final carry
+   
     assign cout = c1 | c2;
 endmodule
