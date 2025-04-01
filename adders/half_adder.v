@@ -3,7 +3,8 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 01.03.2025 19:21:21
+// Create Date:
+
 // Design Name: 
 // Module Name: half_adder
 // Project Name: 
