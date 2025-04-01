@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 30.03.2025 23:55:14
+// Create Date: 
 // Design Name: 
 // Module Name: counter4bit
 // Project Name: 
