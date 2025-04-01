@@ -21,17 +21,17 @@
 
 
 module counter_4bit (
-    input wire clk,        // Clock input
-    input wire reset,      // Active-high reset
-    output reg [3:0] count // 4-bit counter output
+    input wire clk,        
+    input wire reset,      
+    output reg [3:0] count 
 );
     // Counter logic
     always @(posedge clk or posedge reset) begin
         if (reset)
-            count <= 4'b0000;  // Reset to 0
-        else if (count == 4'b1111) // If count reaches 15 (1111)
-            count <= 4'b0000;  // Wrap around to 0
+            count <= 4'b0000; 
+        else if (count == 4'b1111) 
+            count <= 4'b0000; 
         else
-            count <= count + 1; // Increment count
+            count <= count + 1;
     end
 endmodule
