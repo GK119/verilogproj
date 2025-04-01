@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 01.03.2025 19:10:12
+// Create Date: 
 // Design Name: 
 // Module Name: full_adder
 // Project Name: 
